@@ -21,30 +21,15 @@ class _BodyState extends State<CardGames> {
   List _games = [];
 
   Future<void> readJson() async {
-    final data = await Api().getGames("Martin");
-    setState(() {
-      _games = data.data["games"];
-    });
+    // fill _games using getGames and setState
   }
 
   @override
   Widget build(BuildContext context) {
     return (_games.isNotEmpty
-        ? GridView.builder(
-            gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-                maxCrossAxisExtent: 200,
-                childAspectRatio: 2 / 2,
-                crossAxisSpacing: 20,
-                mainAxisSpacing: 20),
-            padding: const EdgeInsets.all(8),
-            itemCount: _games.length,
-            itemBuilder: (BuildContext context, int index) {
-              return CardTemplate(
-                  title: _games[index]["name"],
-                  desc: _games[index]["desc"],
-                  linkavatar: _games[index]["img_src"]);
-            },
-          )
-        : const Text(""));
+    ? 
+    // Make Grid.builder using CartTemplate.
+        : const CircularProgressIndicator()
+      );
   }
 }

@@ -48,39 +48,3 @@ class CardTemplate extends StatelessWidget {
     );
   }
 }
-
-
-// Column(
-//                 children: <Widget>[
-//                   Text(
-//                     title,
-//                     style: const TextStyle(
-//                       fontFamily: "Jost",
-//                       fontWeight: FontWeight.w500,
-//                       fontSize: 30,
-//                     ),
-//                   ),
-//                   const Align(
-//                     alignment: Alignment.center,
-//                     child: Text(
-//                       "Description",
-//                       style: TextStyle(
-//                         fontFamily: "Jost",
-//                         fontWeight: FontWeight.w500,
-//                         fontSize: 20
-//                       ),
-//                     ),
-//                   ),
-//                   const SizedBox(
-//                     height: 10,
-//                   ),
-//                   Text(
-//                     desc,
-//                     textAlign: TextAlign.center,
-//                     style: const TextStyle(color: Colors.black54),
-//                   ),
-//                   const SizedBox(
-//                     height: 10,
-//                   ),
-//                 ],
-//               ),
