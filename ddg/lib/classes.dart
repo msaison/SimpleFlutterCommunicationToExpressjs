@@ -6,16 +6,10 @@ class Api {
   Dio dio = Dio();
 
   Future<Response> getGames(name) async {
-    try{
-      return await Dio().get(
-        'http://localhost:3000/games',
-        queryParameters: {
-          'name': name,
-        },
-        options: Options(
-          contentType: Headers.formUrlEncodedContentType,
-        ),
-      );
+    try {
+      // return Dio().get(
+      //   ...
+      // );
     } catch (e) {
       await Fluttertoast.showToast(
         msg: e.toString(),
@@ -23,8 +17,8 @@ class Api {
         backgroundColor: Colors.red,
         textColor: Colors.white,
       );
-      return Response(statusCode: 500, requestOptions: RequestOptions(path: ''));
+      return Response(
+          statusCode: 500, requestOptions: RequestOptions(path: ''));
     }
-
   }
 }
