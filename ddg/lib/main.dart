@@ -1,8 +1,8 @@
-import 'package:ddg/screens/421/main_421.dart';
-import 'package:ddg/screens/5000/main_5000.dart';
-import 'package:ddg/screens/Trente-six/main_trente-six.dart';
-import 'package:ddg/screens/yams/main_yams.dart';
-import 'package:ddg/screens/zanzibar/main_zanzibar.dart';
+import 'package:ddg/screens/games/421/main_421.dart';
+import 'package:ddg/screens/games/5000/main_5000.dart';
+import 'package:ddg/screens/games/trente-six/main_trente-six.dart';
+import 'package:ddg/screens/games/yams/main_yams.dart';
+import 'package:ddg/screens/games/zanzibar/main_zanzibar.dart';
 import 'package:flutter/material.dart';
 import 'package:ddg/screens/home/main_home.dart';
 import 'package:flutter/services.dart';
